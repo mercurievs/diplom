@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>О нас — IT Support Portal</title>
+    <meta name="description" content="О команде IT Support Portal">
+    <meta name="keywords" content="IT команда, служба поддержки">
+    <meta name="author" content="IT Support Team">
+    <link rel="icon" href="../static/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a class="brand" href="index.html">IT Support</a>
+            <button class="burger" aria-label="toggle menu">☰</button>
+            <nav class="nav-links">
+                <a href="index.html" data-i18n="nav.home">Главная</a>
+                <a href="about.html" data-i18n="nav.about">О нас</a>
+                <a href="services.html" data-i18n="nav.services">Услуги</a>
+                <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+                <a href="login.html" class="auth-guest nav-auth" data-i18n="nav.login">Войти</a>
+                <a href="register.html" class="auth-guest nav-auth" data-i18n="nav.register">Регистрация</a>
+                <a href="dashboard.html" class="auth-logged nav-auth" style="display:none"
+                    data-i18n="nav.dashboard">Личный кабинет</a>
+                <a href="#" id="logoutBtnHeader" class="auth-logged nav-auth" style="display:none"
+                    data-i18n="nav.logout">Выйти</a>
+
+                <select id="langSelect" class="lang-select" aria-label="Language">
+                    <option value="ru" data-i18n="lang.ru">Рус</option>
+                    <option value="kg" data-i18n="lang.kg">Кыргыз</option>
+                </select>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top:84px">
+        <section class="container py-4">
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <h1>О нашей команде</h1>
+                    <p class="lead">Мы — команда сертифицированных IT-специалистов с опытом работы более 10 лет в сфере
+                        корпоративной поддержки.</p>
+                    <p class="text-muted">Наши эксперты регулярно проходят обучение и сертификацию по новейшим
+                        технологиям, что позволяет нам всегда быть в курсе последних тенденций и предлагать оптимальные
+                        решения для бизнеса любого масштаба.</p>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <h4 class="mb-4">Наша команда</h4>
+                    <div class="d-flex mb-3">
+                        <div class="me-3 fs-3">👨‍💻</div>
+                        <div>
+                            <h6 class="mb-1">Системные администраторы</h6>
+                            <p class="text-muted small mb-0">Эксперты по настройке и оптимизации серверных систем</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="me-3 fs-3">🔒</div>
+                        <div>
+                            <h6 class="mb-1">Специалисты по безопасности</h6>
+                            <p class="text-muted small mb-0">Защита данных и IT-инфраструктуры</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="me-3 fs-3">🌐</div>
+                        <div>
+                            <h6 class="mb-1">Сетевые инженеры</h6>
+                            <p class="text-muted small mb-0">Построение надежных сетевых решений</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="me-3 fs-3">🎯</div>
+                        <div>
+                            <h6 class="mb-1">Служба поддержки</h6>
+                            <p class="text-muted small mb-0">Быстрое решение любых IT-задач</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-4">Сертификации</h4>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="border rounded p-3">
+                                <h6 class="mb-2">Microsoft</h6>
+                                <p class="text-muted small mb-0">Certified Solutions Expert</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="border rounded p-3">
+                                <h6 class="mb-2">Cisco</h6>
+                                <p class="text-muted small mb-0">Certified Network Professional</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="border rounded p-3">
+                                <h6 class="mb-2">CompTIA</h6>
+                                <p class="text-muted small mb-0">Security+ Certification</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="border rounded p-3">
+                                <h6 class="mb-2">ITIL</h6>
+                                <p class="text-muted small mb-0">Service Management</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4>Наша миссия</h4>
+                            <p class="text-muted mb-0">Создавать и поддерживать надёжную, безопасную и эффективную
+                                IT-среду, которая помогает бизнесу развиваться. Мы стремимся быть не просто службой
+                                поддержки, а настоящими партнёрами в развитии IT-инфраструктуры наших клиентов.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4>Наши ценности</h4>
+                            <ul class="text-muted list-unstyled mb-0">
+                                <li class="mb-2">✓ Профессионализм — постоянное совершенствование навыков</li>
+                                <li class="mb-2">✓ Ответственность — полное вовлечение в решение задач</li>
+                                <li class="mb-2">✓ Оперативность — быстрое реагирование на обращения</li>
+                                <li class="mb-2">✓ Качество — тщательный подход к каждой задаче</li>
+                                <li>✓ Инновации — внедрение современных технологий</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="mb-4">Процесс работы</h4>
+                            <ol class="text-muted">
+                                <li class="mb-3">Получение и анализ заявки</li>
+                                <li class="mb-3">Назначение специалиста нужной квалификации</li>
+                                <li class="mb-3">Диагностика и решение проблемы</li>
+                                <li class="mb-3">Тестирование и проверка результата</li>
+                                <li>Получение обратной связи от клиента</li>
+                            </ol>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="mb-4">Статистика</h4>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="text-muted">Средняя оценка качества</span>
+                                <strong>4.8 / 5.0</strong>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="text-muted">Скорость реакции</span>
+                                <strong>15 минут</strong>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <span class="text-muted">Решение с первого раза</span>
+                                <strong>97%</strong>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-muted">Довольных клиентов</span>
+                                <strong>50+</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+                <div><strong>IT Support Portal</strong>
+                    <div class="text-muted" data-i18n="footer.copy">© 2025</div>
+                </div>
+                <div class="social">
+                    <a href="#">Telegram</a> • <a href="#">WhatsApp</a> • <a href="#">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top" title="Наверх">↑</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/lang.js" defer></script>
+    <script src="../static/js/main.js" defer></script>
+    <!-- CSS connected successfully -->
+</body>
+
+</html>

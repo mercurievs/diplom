@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Контакты — IT Support Portal</title>
+    <meta name="description" content="Контакты IT Support Portal">
+    <meta name="keywords" content="контакты,support">
+    <meta name="author" content="IT Support Team">
+    <link rel="icon" href="../static/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a class="brand" href="index.html">IT Support</a>
+            <button class="burger" aria-label="toggle menu">☰</button>
+            <nav class="nav-links">
+                <a href="index.html" data-i18n="nav.home">Главная</a>
+                <a href="about.html" data-i18n="nav.about">О нас</a>
+                <a href="services.html" data-i18n="nav.services">Услуги</a>
+                <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+                <a href="login.html" class="auth-guest nav-auth" data-i18n="nav.login">Войти</a>
+                <a href="register.html" class="auth-guest nav-auth" data-i18n="nav.register">Регистрация</a>
+                <a href="dashboard.html" class="auth-logged nav-auth" style="display:none"
+                    data-i18n="nav.dashboard">Личный кабинет</a>
+                <a href="#" id="logoutBtnHeader" class="auth-logged nav-auth" style="display:none"
+                    data-i18n="nav.logout">Выйти</a>
+
+                <select id="langSelect" class="lang-select" aria-label="Language">
+                    <option value="ru" data-i18n="lang.ru">Рус</option>
+                    <option value="kg" data-i18n="lang.kg">Кыргыз</option>
+                </select>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top:84px">
+        <div class="container py-4">
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <h1 class="mb-4" data-i18n="contacts.title">Свяжитесь с нами</h1>
+                    <p class="lead mb-4">Мы всегда на связи и готовы помочь решить любые IT-задачи вашего бизнеса</p>
+                    <p class="text-muted">Выберите удобный способ связи или оставьте заявку через форму обратной связи.
+                        Наши специалисты ответят в кратчайшие сроки и помогут найти оптимальное решение для ваших задач.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="fs-2 me-3">📍</div>
+                                <h4 class="mb-0">Главный офис</h4>
+                            </div>
+                            <p class="mb-1">г. Бишкек, ул. Ленина 1</p>
+                            <p class="mb-1">Бизнес-центр "Прогресс"</p>
+                            <p class="mb-0 text-muted">6 этаж, офис 601</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="fs-2 me-3">📞</div>
+                                <h4 class="mb-0">Телефоны</h4>
+                            </div>
+                            <p class="mb-1">+996 555 123 456</p>
+                            <p class="mb-1">+996 312 123 456</p>
+                            <p class="mb-0 text-muted">Пн-Пт: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="fs-2 me-3">✉️</div>
+                                <h4 class="mb-0">Email</h4>
+                            </div>
+                            <p class="mb-1">info@support.kg</p>
+                            <p class="mb-1">support@support.kg</p>
+                            <p class="mb-0 text-muted">Ответ в течение 2 часов</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="fs-2 me-3">🌐</div>
+                                <h4 class="mb-0">Соцсети</h4>
+                            </div>
+                            <div class="d-flex gap-2 mb-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">WhatsApp</a>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Telegram</a>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">Instagram</a>
+                                <a href="#" class="btn btn-outline-primary btn-sm">Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">График работы</h4>
+
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Техническая поддержка:</span>
+                                <span>24/7</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Офис (будни):</span>
+                                <span>9:00 - 18:00</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Офис (суббота):</span>
+                                <span>10:00 - 15:00</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="text-muted">Воскресенье:</span>
+                                <span>Выходной</span>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <h5 class="mb-3">Экстренная поддержка</h5>
+                            <p class="text-muted mb-0">Для срочных обращений в нерабочее время звоните на горячую линию:
+                                <br>+996 555 911 911</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Форма обратной связи</h4>
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label class="form-label" data-i18n="contacts.form.name">Ваше имя</label>
+                                    <input type="text" class="form-control" name="name" placeholder="Введите ваше имя"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" data-i18n="contacts.form.email">Email</label>
+                                    <input type="email" class="form-control" name="email"
+                                        placeholder="example@domain.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" data-i18n="contacts.form.subject">Тема обращения</label>
+                                    <select class="form-select" name="subject" required>
+                                        <option value="">Выберите тему</option>
+                                        <option>Техническая поддержка</option>
+                                        <option>Консультация по услугам</option>
+                                        <option>Отзыв о работе</option>
+                                        <option>Другое</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" data-i18n="contacts.form.message">Сообщение</label>
+                                    <textarea class="form-control" name="message" rows="4"
+                                        placeholder="Опишите ваш вопрос или предложение..." required></textarea>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="privacy" required>
+                                    <label class="form-check-label text-muted" for="privacy">Я согласен на обработку
+                                        персональных данных</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary" data-i18n="contacts.form.send">Отправить
+                                    сообщение</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="ratio ratio-21x9">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.8649330646226!2d74.58746631532753!3d42.87731297915492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9fc7a8adcd9%3A0x6b14af6a3e458e53!2zMSDRg9C70LjRhtCwINCb0LXQvdC40L3QsCwg0JHQuNGI0LrQtdC6!5e0!3m2!1sru!2skg!4v1635835269425!5m2!1sru!2skg"
+                            style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+                <div><strong>IT Support Portal</strong>
+                    <div class="text-muted">© 2025</div>
+                </div>
+                <div class="social">
+                    <a href="#">Telegram</a> • <a href="#">WhatsApp</a> • <a href="#">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top" title="Наверх">↑</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/lang.js" defer></script>
+    <script src="../static/js/main.js" defer></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Спасибо! Ваше сообщение отправлено.');
+            this.reset();
+        });
+    </script>
+    <!-- CSS connected successfully -->
+</body>
+
+</html>

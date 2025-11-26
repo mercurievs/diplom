@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Личный кабинет — IT Support Portal</title>
+    <meta name="description" content="Личный кабинет пользователя">
+    <meta name="keywords" content="dashboard,tickets,profile">
+    <link rel="icon" href="../static/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a class="brand" href="index.html">IT Support</a>
+            <button class="burger" aria-label="toggle menu">☰</button>
+            <nav class="nav-links">
+                <a href="index.html" data-i18n="nav.home">Главная</a>
+                <a href="about.html" data-i18n="nav.about">О нас</a>
+                <a href="services.html" data-i18n="nav.services">Услуги</a>
+                <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+                <a href="login.html" class="auth-guest nav-auth" data-i18n="nav.login">Войти</a>
+                <a href="register.html" class="auth-guest nav-auth" data-i18n="nav.register">Регистрация</a>
+                <a href="dashboard.html" class="auth-logged nav-auth" style="display:none"
+                    data-i18n="nav.dashboard">Личный кабинет</a>
+                <a href="#" id="logoutBtnHeader" class="auth-logged nav-auth" style="display:none"
+                    data-i18n="nav.logout">Выйти</a>
+
+                <select id="langSelect" class="lang-select" aria-label="Language">
+                    <option value="ru" data-i18n="lang.ru">Рус</option>
+                    <option value="kg" data-i18n="lang.kg">Кыргыз</option>
+                </select>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top:84px">
+        <section class="container py-4">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
+                <div>
+                    <h2 data-i18n="dashboard.title">Личный кабинет</h2>
+                    <div class="text-muted" id="welcomeName" data-i18n-html="welcome.message">Добро пожаловать!</div>
+                </div>
+                <div>
+                    <button class="btn btn-light" id="logoutBtn" data-i18n="nav.logout">Выйти</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 data-i18n="dashboard.newticket">Создать новую заявку</h5>
+                    <form id="newTicketForm">
+                        <div class="mb-2">
+                            <input class="input" name="title" placeholder="Тема" data-i18n-placeholder="ticket.title"
+                                required>
+                        </div>
+                        <div class="mb-2">
+                            <textarea class="input" name="description" placeholder="Описание" rows="4"
+                                data-i18n-placeholder="ticket.description" required></textarea>
+                        </div>
+                        <div style="display:flex;gap:.5rem">
+                            <select name="priority" class="input" style="max-width:180px">
+                                <option value="low" data-i18n="ticket.priority.low">Низкий</option>
+                                <option value="medium" selected data-i18n="ticket.priority.medium">Средний</option>
+                                <option value="high" data-i18n="ticket.priority.high">Высокий</option>
+                                <option value="critical" data-i18n="ticket.priority.critical">Критический</option>
+                            </select>
+                            <button class="btn btn-primary" type="submit" data-i18n="cta.create">Создать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div style="margin-top:1rem">
+                <h4>Мои заявки</h4>
+                <div id="ticketsContainer" class="mt-2"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+                <div><strong>IT Support Portal</strong>
+                    <div class="text-muted">© 2025</div>
+                </div>
+                <div class="social">
+                    <a href="#">Telegram</a> • <a href="#">WhatsApp</a> • <a href="#">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top" title="Наверх">↑</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/lang.js" defer></script>
+    <script src="../static/js/main.js" defer></script>
+    <script src="../static/js/dashboard.js" defer></script>
+    <script src="../static/js/auth.js" defer></script>
+    <!-- CSS connected successfully -->
+</body>
+
+</html>
